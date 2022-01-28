@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ImageButton
         android:id="@+id/imgReanudar"
-        android:onClick="restart"
+        android:onClick="reiniciar"
         android:layout_width="81dp"
         android:layout_height="93dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,7 +22,7 @@
 
     <ImageButton
         android:id="@+id/imgPausar"
-        android:onClick="pause"
+        android:onClick="pausar"
         android:layout_width="80dp"
         android:layout_height="94dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,7 +35,7 @@
 
     <ImageButton
         android:id="@+id/imgParar"
-        android:onClick="stop"
+        android:onClick="parar"
         android:layout_width="69dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +48,7 @@
 
     <ImageButton
         android:id="@+id/imgIniciar"
-        android:onClick="play"
+        android:onClick="iniciar"
         android:layout_width="85dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,5 +58,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.809"
         app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <Button
+        android:id="@+id/btSonido"
+        android:layout_width="190dp"
+        android:layout_height="87dp"
+        android:onClick="sonidoPorInternet"
+        android:text="Sonido en red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
